@@ -1,0 +1,76 @@
+<div id="pagina-conteudo">
+    <div class="container-fluid">
+            
+            <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">
+                    Novo Local
+                </h2>
+            </div>
+            </div>
+
+
+            <div class="localfisico form">
+                <form action="/localfisicos" accept-charset="UTF-8" method="post">
+
+                        <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label class="control-label required" for="localfisico_instituica_id">Instituição</label>
+                            <select class="form-control" name="localfisico[instituica_id]" id="localfisico_instituica_id"><option value="">Selecionar</option>
+                                <option value="1">Colégio Técnico de Teresina</option>
+                                <option value="2">Colégio Técnico de Bom Jesus</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label class="control-label required" for="localfisico_nome">Nome</label>
+                            <input id="localfisico_nome" class="form-control" type="text" name="localfisico[nome]">
+                        </div>
+                        <div class="col-lg-3 form-group">
+                            <label class="control-label required" for="localfisico_tipo">Tipo</label>
+                            <select class="form-control" name="localfisico[tipo]" id="localfisico_tipo"><option value="">Selecionar</option>
+                                <option value="0">Laboratório</option>
+                                <option value="1">Sala de Aula</option>
+                                <option value="2">R.U</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 form-group">
+                            <label class="control-label" for="localfisico_descricao">Descrição</label>
+                            <input id="localfisico_descricao" class="form-control" type="text" name="localfisico[descricao]">
+                        </div>
+
+                        </div>
+
+                        <div class="row">
+                        <div class="col-lg-3 form-group">
+                            <input type="submit" name="commit" value="Salvar" class="btn btn-primary colorprimarybtn" data-disable-with="Salvando">
+                        </div>
+                        <div class="col-lg-3 form-group">
+                             <a class="btn btn-primary colorprimarybtn" href="/localfisicos">Voltar</a>
+                        </div>
+                        </div>
+                </form>
+        </div>                
+    </div>
+            
+  </div>
+
+  <script>
+    // Primeiro, carrega o template
+    const conteudoDaPagina = document.getElementById('pagina-conteudo').cloneNode(true)
+    fetch('../template/layout.html')
+      .then(res => res.text())
+      .then(templateHtml => {
+          document.open(); // Corrige problemas de JS ao usar innerHTML direto
+          document.write(templateHtml);
+          document.close();
+
+          // Espera o DOM do template ser carregado
+          window.addEventListener('DOMContentLoaded', () => {
+          const divConteudo = document.getElementById('conteudo');
+          if (divConteudo) {
+              divConteudo.appendChild(conteudoDaPagina);
+          }
+          });
+      });
+  </script>
