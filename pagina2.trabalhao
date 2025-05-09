@@ -1,0 +1,242 @@
+ <div id="pagina-conteudo">
+      <div class="categdespesas index">
+        <h2>Inscrições </h2>
+      <form action="/solicitacaoalunos.html" accept-charset="UTF-8" method="get">  
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-6  form-group">  
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o nome ou cpf para pesquisar">  
+                </div>
+                 <div class="col-lg-6  form-group">  
+                    <select id="codlote" name="codlote" class="form-control" required="">
+                        <option value="" disabled="" selected="" hidden="">Lotes</option>
+                          <option value="11"> EDITAL N° XXX/2025 - COLÉGIO TÉCNICO DE BOM JESUS - CTBJ/UFPI - SELEÇÃO DE ESTUDANTES PARA CONCESSÃO DE BENEFÍCIO AUXILIO ESTUDANTIL (BAE)</option>
+                          <option value="10"> ADITIVO Nº 3/2025 - EDITAL N° 3/2025 - COLÉGIO TÉCNICO DE TERESINA - CTT/UFPI SELEÇÃO DE ESTUDANTES PARA CONCESSÃO DE BENEFÍCIO RESIDÊNCIA ESTUDANTIL (RE)</option>
+                    </select> 
+                </div> 
+                <div class="col-lg-6  form-group">  
+                    <select id="status" name="status" class="form-control" required="">
+                        <option value="" disabled="" selected="" hidden="">Status</option>
+                          <option value="0"> Solicitada</option>
+                          <option value="1"> Deferida</option>
+                          <option value="2"> Indeferida</option>
+                          <option value="4"> Cancelada</option>
+                    </select> 
+                </div> 
+                <div class="col-lg-3  form-group">  
+                    <select id="opcao" name="opcao" class="form-control">
+                        <option value="" disabled="" selected="">Com Recurso em Inscrição</option>
+                          <option value="0"> Não</option>
+                          <option value="1"> Sim</option>
+                    </select> 
+                </div> 
+                <div class="col-lg-3  form-group">  
+                    <select id="opcaoprova" name="opcaoprova" class="form-control">
+                        <option value="" disabled="" selected="">Com Recurso pós inscrição</option>
+                          <option value="0"> Não</option>
+                          <option value="1"> Sim</option>
+                    </select> 
+                </div> 
+  
+                <div class="col-lg-6 form-group">
+                  <input type="submit" name="commit" value="Pesquisar" class="btn btn-primary colorprimarybtn2" data-disable-with="Pesquisar">
+                </div>
+               
+          </div>
+        </div>
+      </div>
+  </form> 
+    <div class="table-responsive">
+    <table class="table table-hover table-striped" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+        <th>COD</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Data de Nasc</th>
+        <th>Status</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr>
+        <td>1000001</td>
+        <td>ANA LUIZA MENDES</td>
+        <td>123.456.789-00</td>
+        <td>ana.mendes@example.com</td>
+        <td>05/04/2006</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000001">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000001/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000001">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000002</td>
+        <td>JOÃO PEDRO ALMEIDA</td>
+        <td>987.654.321-99</td>
+        <td>joao.almeida@example.com</td>
+        <td>10/09/2007</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000002">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000002/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000002">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000003</td>
+        <td>MARIA CLARA OLIVEIRA</td>
+        <td>741.852.963-20</td>
+        <td>maria.oliveira@example.com</td>
+        <td>22/01/2005</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000003">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000003/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000003">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000004</td>
+        <td>LUCAS GOMES PEREIRA</td>
+        <td>369.258.147-33</td>
+        <td>lucas.pereira@example.com</td>
+        <td>30/07/2008</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000004">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000004/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000004">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000005</td>
+        <td>BEATRIZ SOUZA COSTA</td>
+        <td>852.741.963-10</td>
+        <td>beatriz.costa@example.com</td>
+        <td>15/12/2009</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000005">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000005/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000005">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000006</td>
+        <td>RAFAEL MORAES SANTOS</td>
+        <td>111.222.333-44</td>
+        <td>rafael.santos@example.com</td>
+        <td>03/03/2007</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000006">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000006/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000006">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000007</td>
+        <td>FERNANDA DIAS LIMA</td>
+        <td>222.333.444-55</td>
+        <td>fernanda.lima@example.com</td>
+        <td>19/11/2006</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000007">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000007/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000007">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000008</td>
+        <td>GABRIELA MARTINS FERREIRA</td>
+        <td>333.444.555-66</td>
+        <td>gabriela.ferreira@example.com</td>
+        <td>07/08/2005</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000008">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000008/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000008">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000009</td>
+        <td>MATHEUS ANDRADE VIEIRA</td>
+        <td>444.555.666-77</td>
+        <td>matheus.vieira@example.com</td>
+        <td>21/05/2009</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000009">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000009/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000009">Excluir</a></td>
+      </tr>
+      <tr>
+        <td>1000010</td>
+        <td>JULIA CAMPOS RIBEIRO</td>
+        <td>555.666.777-88</td>
+        <td>julia.ribeiro@example.com</td>
+        <td>01/02/2006</td>
+        <td>Deferida</td>
+        <td><a href="/solicitacaoalunos/1000010">Visualizar</a></td>
+        <td><a href="/solicitacaoalunos/1000010/edit">Alterar</a></td>
+        <td><a data-turbo-method="delete" data-turbo-confirm="Tem certeza que deseja excluir esta inscrição?" class="remove-tag" data-remote="true" rel="nofollow" data-method="delete" href="/solicitacaoalunos/1000010">Excluir</a></td>
+      </tr>
+      <!-- Adicione +10 registros semelhantes se desejar completar os 20 -->
+      
+        </tbody>
+    </table>
+  </div>
+  
+   
+    <nav>
+      <ul class="pagination">
+        
+        
+              <li class="page-item active">
+      <a data-remote="false" class="page-link">1</a>
+    </li>
+  
+              <li class="page-item">
+      <a rel="next" class="page-link" href="/solicitacaoalunos?page=2">2</a>
+    </li>
+  
+              <li class="page-item">
+      <a class="page-link" href="/solicitacaoalunos?page=3">3</a>
+    </li>
+  
+              <li class="page-item">
+      <a class="page-link" href="/solicitacaoalunos?page=4">4</a>
+    </li>
+  
+              <li class="page-item">
+      <a class="page-link" href="/solicitacaoalunos?page=5">5</a>
+    </li>
+  
+            <li class="page-item disabled">
+    <a class="page-link" href="#">…</a>
+  </li>
+  
+        <li class="page-item">
+    <a rel="next" class="page-link" href="/solicitacaoalunos?page=2">Próximo ›</a>
+  </li>
+  
+        <li class="page-item">
+    <a class="page-link" href="/solicitacaoalunos?page=16">Último »</a>
+  </li>
+  
+      </ul>
+    </nav>
+  
+  </div>
+    </div>
+  
+    <script>
+      // Primeiro, carrega o template
+      const conteudoDaPagina = document.getElementById('pagina-conteudo').cloneNode(true)
+      fetch('../template/layout.html')
+        .then(res => res.text())
+        .then(templateHtml => {
+            document.open(); // Corrige problemas de JS ao usar innerHTML direto
+            document.write(templateHtml);
+            document.close();
+
+            // Espera o DOM do template ser carregado
+            window.addEventListener('DOMContentLoaded', () => {
+            const divConteudo = document.getElementById('conteudo');
+            if (divConteudo) {
+                divConteudo.appendChild(conteudoDaPagina);
+            }
+            });
+        });
+    </script>
